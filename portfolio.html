@@ -1,227 +1,307 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Portfolio | GENESIS Digital Agency</title>
+    <title>Work | GENESIS</title>
     <script src="./js/tailwind-config.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="bg-midnight text-white font-sans overflow-x-hidden">
+<body class="bg-[#F5F5F7] text-[#11131F] font-sans overflow-x-hidden">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 py-6 px-8 flex justify-between items-center glass-card border-none bg-transparent">
-        <a href="./index.html" class="text-2xl font-black tracking-tighter italic">GEN<span class="text-electric">ESIS</span></a>
-        <div class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
-            <a href="./about.html" class="hover:text-electric transition-colors">About</a>
-            <a href="./services.html" class="hover:text-electric transition-colors">Services</a>
-            <a href="./portfolio.html" class="hover:text-electric transition-colors">Work</a>
-            <a href="./contact.html" class="hover:text-electric transition-colors">Contact</a>
+    <nav class="fixed top-0 w-full z-50 py-6 px-8 flex justify-between items-center bg-[#F5F5F7]/90 backdrop-blur-md border-b border-black/5">
+        <a href="./index.html" class="flex items-center gap-2 text-2xl font-black tracking-tighter">
+            <div class="w-8 h-8 rounded bg-gradient-to-br from-[#8B5CF6] to-[#3B82F6] flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="white"/>
+                    <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            GENESIS
+        </a>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="./portfolio.html" class="text-[#11131F] font-bold">Work</a>
+            <a href="./services.html" class="text-slate-500 hover:text-[#11131F] transition-colors">Services</a>
+            <a href="./index.html#process" class="text-slate-500 hover:text-[#11131F] transition-colors">Process</a>
+            <a href="./about.html" class="text-slate-500 hover:text-[#11131F] transition-colors">About</a>
         </div>
-        <div class="flex items-center gap-4">
-            <a href="./contact.html" class="hidden md:block bg-white/10 hover:bg-white/20 px-6 py-2 rounded-full text-sm font-bold border border-white/20">Start Project</a>
-            <button id="mobile-menu-btn" class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+        <div class="flex items-center gap-3">
+            <a href="./contact.html" class="hidden md:block bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] hover:opacity-90 px-6 py-2.5 rounded-full text-sm font-bold text-white transition-opacity shadow-lg shadow-blue-500/20">Contact Us</a>
+            <a href="#" class="hidden md:flex w-10 h-10 rounded-full bg-[#F05A22]/10 text-[#F05A22] items-center justify-center hover:bg-[#F05A22]/20 transition-colors">
+                <span class="material-symbols-outlined text-sm">phone_iphone</span>
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden text-[#11131F]"><span class="material-symbols-outlined">menu</span></button>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-midnight/95 backdrop-blur-xl flex-col items-center justify-center gap-8 hidden">
-        <button id="close-menu-btn" class="absolute top-8 right-8 text-white"><span class="material-symbols-outlined text-3xl">close</span></button>
-        <a href="./about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">About</a>
-        <a href="./services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Services</a>
-        <a href="./portfolio.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Work</a>
-        <a href="./contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Contact</a>
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#F5F5F7]/95 backdrop-blur-xl flex-col items-center justify-center gap-8 hidden">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-[#11131F]"><span class="material-symbols-outlined text-3xl">close</span></button>
+        <a href="./portfolio.html" class="text-2xl font-bold text-[#8B5CF6] transition-colors">Work</a>
+        <a href="./services.html" class="text-2xl font-bold hover:text-[#8B5CF6] transition-colors">Services</a>
+        <a href="./index.html#process" class="text-2xl font-bold hover:text-[#8B5CF6] transition-colors">Process</a>
+        <a href="./about.html" class="text-2xl font-bold hover:text-[#8B5CF6] transition-colors">About</a>
+        <a href="./contact.html" class="text-2xl font-bold hover:text-[#8B5CF6] transition-colors">Contact</a>
     </div>
 
-    <!-- Main Content -->
-    <main class="pt-24 pb-20">
-        <section class="relative min-h-[60vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-            <div class="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(106,76,255,0.15)_0%,transparent_70%)] blur-[60px] -z-10"></div>
-            <div class="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(0,212,255,0.15)_0%,transparent_70%)] blur-[60px] -z-10"></div>
-            
-            <div class="max-w-4xl mx-auto space-y-8 relative z-10">
-                <span class="inline-block px-4 py-1.5 rounded-full glass-card border border-white/10 text-xs font-bold tracking-widest uppercase text-electric">
-                    Digital Excellence Redefined
-                </span>
-                <h1 class="text-5xl md:text-8xl font-black tracking-tight leading-[1.1] text-white">
-                    Our Work Speaks <br/>
-                    <span class="text-gradient">For Itself</span>
-                </h1>
-                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                    Experience the Midnight Glow of digital excellence with our Royal Aurora designs. We craft immersive digital experiences that scale.
+    <!-- Hero Section -->
+    <header class="pt-40 pb-24 px-6 text-center relative overflow-hidden">
+        <!-- Background Blobs -->
+        <div class="absolute top-20 left-10 w-64 h-64 bg-[#8B5CF6]/20 rounded-full mix-blend-multiply filter blur-[80px] opacity-70 animate-blob"></div>
+        <div class="absolute top-40 right-20 w-72 h-72 bg-[#00D4FF]/20 rounded-full mix-blend-multiply filter blur-[80px] opacity-70 animate-blob animation-delay-2000"></div>
+        
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="text-[#00D4FF] font-bold text-[10px] uppercase tracking-widest mb-6">DIGITAL EXCELLENCE REDEFINED</div>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-[1.1] tracking-tight text-[#11131F]">
+                Our Work Speaks <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#7B61FF] to-[#00D4FF]">For Itself</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Experience the Midnight Glow of digital excellence with our Royal Aurora designs. We craft immersive digital experiences that scale.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#projects" class="bg-[#F05A22] hover:bg-[#D94E1A] px-8 py-3.5 rounded-xl font-bold text-white transition-colors w-full sm:w-auto justify-center shadow-lg shadow-[#F05A22]/20">View Projects</a>
+                <a href="#strategy" class="bg-transparent px-8 py-3.5 rounded-xl font-bold text-[#11131F] hover:bg-black/5 transition-colors w-full sm:w-auto justify-center">Our Strategy</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section id="projects" class="py-16 px-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-16 text-sm font-medium">
+                <button class="bg-[#F05A22] text-white px-6 py-2 rounded-full shadow-md shadow-[#F05A22]/20">All Projects</button>
+                <button class="text-slate-500 hover:text-[#11131F] px-4 py-2 transition-colors">Web Development</button>
+                <button class="text-slate-500 hover:text-[#11131F] px-4 py-2 transition-colors">E-Commerce</button>
+                <button class="text-slate-500 hover:text-[#11131F] px-4 py-2 transition-colors">Content Creation</button>
+                <button class="text-slate-500 hover:text-[#11131F] px-4 py-2 transition-colors">Creative Projects</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-3xl overflow-hidden mb-6 aspect-[4/3] bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2940&auto=format&fit=crop" alt="Ador Atron" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerpolicy="no-referrer">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold mb-1 text-[#11131F]">Ador Atron</h3>
+                            <p class="text-[#F05A22] text-sm font-medium">Web Development</p>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-black/5 flex items-center justify-center text-slate-400 group-hover:bg-[#F05A22] group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm transform -rotate-45">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-3xl overflow-hidden mb-6 aspect-[4/3] bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2727&auto=format&fit=crop" alt="AK Savvy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerpolicy="no-referrer">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold mb-1 text-[#11131F]">AK Savvy</h3>
+                            <p class="text-[#F05A22] text-sm font-medium">E-Commerce</p>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-black/5 flex items-center justify-center text-slate-400 group-hover:bg-[#F05A22] group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm transform -rotate-45">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-3xl overflow-hidden mb-6 aspect-[4/3] bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=2940&auto=format&fit=crop" alt="Digital Lovable" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerpolicy="no-referrer">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold mb-1 text-[#11131F]">Digital Lovable</h3>
+                            <p class="text-[#F05A22] text-sm font-medium">Creative Projects</p>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-black/5 flex items-center justify-center text-slate-400 group-hover:bg-[#F05A22] group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm transform -rotate-45">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Highlight -->
+    <section class="py-24 px-8 relative overflow-hidden">
+        <!-- Background Blur -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-[#8B5CF6]/10 to-[#00D4FF]/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-5xl md:text-6xl font-black mb-2 text-[#11131F]">Featured</h2>
+                <h2 class="text-5xl md:text-6xl font-black mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#7B61FF] to-[#00D4FF]">Highlight</h2>
+                
+                <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                    Nexus Portal represents our most ambitious project to date. A fully decentralized interface for managing cross-chain digital assets with zero latency.
                 </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                    <button class="w-full sm:w-auto px-8 py-4 btn-primary text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform">
-                        View Projects
-                    </button>
-                    <a href="./services.html" class="w-full sm:w-auto px-8 py-4 glass-card text-white rounded-xl font-bold text-lg hover:bg-white/5 transition-colors">
-                        Our Strategy
-                    </a>
+                
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-3 text-[#11131F] font-medium">
+                        <div class="w-6 h-6 rounded-full bg-[#00D4FF] flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-white text-sm">check</span>
+                        </div>
+                        Web3 Architecture Integration
+                    </li>
+                    <li class="flex items-center gap-3 text-[#11131F] font-medium">
+                        <div class="w-6 h-6 rounded-full bg-[#00D4FF] flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-white text-sm">check</span>
+                        </div>
+                        Advanced Data Visualization
+                    </li>
+                    <li class="flex items-center gap-3 text-[#11131F] font-medium">
+                        <div class="w-6 h-6 rounded-full bg-[#00D4FF] flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-white text-sm">check</span>
+                        </div>
+                        Ultra-Responsive Dashboard Design
+                    </li>
+                </ul>
+
+                <a href="#" class="inline-block bg-[#F05A22] hover:bg-[#D94E1A] px-8 py-4 rounded-xl font-bold text-white transition-colors shadow-lg shadow-[#F05A22]/20">Launch Case Study</a>
+            </div>
+            
+            <div class="relative">
+                <div class="bg-white rounded-[2rem] p-4 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-black/5 transform rotate-1 hover:rotate-0 transition-transform duration-500">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop" alt="Dashboard Interface" class="w-full h-auto rounded-2xl border border-black/5" referrerpolicy="no-referrer">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="max-w-7xl mx-auto px-6 py-12">
-            <div class="flex flex-wrap justify-center gap-2 md:gap-4 border-b border-white/5 pb-6">
-                <button class="px-6 py-2 rounded-full bg-royal text-white font-bold text-sm">All Projects</button>
-                <button class="px-6 py-2 rounded-full glass-card text-slate-300 hover:bg-royal/10 transition-colors font-semibold text-sm">Web Development</button>
-                <button class="px-6 py-2 rounded-full glass-card text-slate-300 hover:bg-royal/10 transition-colors font-semibold text-sm">E-Commerce</button>
-                <button class="px-6 py-2 rounded-full glass-card text-slate-300 hover:bg-royal/10 transition-colors font-semibold text-sm">Content Creation</button>
-                <button class="px-6 py-2 rounded-full glass-card text-slate-300 hover:bg-royal/10 transition-colors font-semibold text-sm">Creative Projects</button>
+    <!-- How We Bring Ideas To Life -->
+    <section id="strategy" class="py-24 px-8 bg-[#F5F5F7]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-[#11131F]">How We Bring Ideas To Life</h2>
+                <p class="text-slate-500">A streamlined 4-step workflow designed for perfection.</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-                <div class="group relative flex flex-col gap-5">
-                    <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden glass-card border border-white/5">
-                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC71UKvUkettumyozlk_8kue5r-cJNfX2OP63q5wDTHRnEoguuQp6onVqc72SxxYZIHLgVsZuymhLPLg0qvgoVp1X6YZ847azslKtKXzXEX3g2yaBcjqA1OkCF2HKSQHC_pm2718pMuE--3LuvjJeL3oCuu6lTW3_5BhOQaRLT_75cLBh0W8AD51dtzTDQhP3D4RjhWgkVqnhhmwa975Jnx89QNBI6ZMqRY4yrAVopBHNTk0ecZukJ8ZMBvrweqJnzMf_W2uow8iL-k')"></div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-midnight/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                            <button class="btn-primary text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2">
-                                View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                            </button>
-                        </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-transparent">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#8B5CF6] to-[#6366F1] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/20">
+                        <span class="material-symbols-outlined text-white">lightbulb</span>
                     </div>
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-white">Ador Atron</h3>
-                                <p class="text-royal font-medium text-sm">Web Development</p>
-                            </div>
-                            <span class="material-symbols-outlined text-slate-400 -rotate-45">arrow_forward</span>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#11131F]">Discovery</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Understanding your vision, market goals, and technical requirements through deep research.</p>
                 </div>
-
-                <div class="group relative flex flex-col gap-5">
-                    <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden glass-card border border-white/5">
-                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDA5SOLlg1-UVz4LLZrgQHhhOPUPL9F0mLVfAF30QumvljrZOpl02zYsl8i9QtQxchkS3V-dcwTy1fT7nNigg1_ItnhGe-Z5T-MJnyVnGL8YpZqD5ln3BAYK-UQhclLQCoSHTFs26fZlvsPJzyzVp7RnwqsImOB4zK6T5678jUUWrAolHdWwLPzyc9XRkw4YPgte1D4e0nlOFkOKysi6-W8bM7pFU_CFaYeNrLrSvbVv6P0Os7VX_6Se5xFny0iq4fkz-B6XbvwUcod')"></div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-midnight/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                            <button class="btn-primary text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2">
-                                Explore Store <span class="material-symbols-outlined text-sm">shopping_bag</span>
-                            </button>
-                        </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-transparent">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#8B5CF6] to-[#6366F1] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/20">
+                        <span class="material-symbols-outlined text-white">design_services</span>
                     </div>
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-white">AK Savvy</h3>
-                                <p class="text-royal font-medium text-sm">E-Commerce</p>
-                            </div>
-                            <span class="material-symbols-outlined text-slate-400 -rotate-45">arrow_forward</span>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#11131F]">Design</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Crafting high-fidelity prototypes and aesthetic interfaces that define your brand identity.</p>
                 </div>
-
-                <div class="group relative flex flex-col gap-5">
-                    <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden glass-card border border-white/5">
-                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsarnEjPtjNNiRtMR600-CO8L8yvovf3g2q4spO8SzTKOGxP9KoD7wPwTZhi-ti_Jpt_CCmL4c4mZI-mo-LuRDYnGBxXk-b9VQBtXjyKSP-ymKe6PjXKW7gsR3_o1JvlW5x5YoDdyyqDAwTP6-TvnevgbsO24bgxzHa2kC5T3s8sSr9rx0Edhy3I-HiFP3eKJcg_54u9lWvuF2fG_8c_BNhE7auoDNWL-0Qal0VSaCrErPHNl4AFUmpRl3kZywp82x2h1a4sRqKyYS')"></div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-midnight/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                            <button class="btn-primary text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2">
-                                View Gallery <span class="material-symbols-outlined text-sm">visibility</span>
-                            </button>
-                        </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-transparent">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#8B5CF6] to-[#6366F1] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/20">
+                        <span class="material-symbols-outlined text-white">code</span>
                     </div>
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-white">Digital Lovable</h3>
-                                <p class="text-royal font-medium text-sm">Creative Projects</p>
-                            </div>
-                            <span class="material-symbols-outlined text-slate-400 -rotate-45">arrow_forward</span>
-                        </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#11131F]">Development</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Building robust, scalable, and secure digital foundations using modern technologies.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="bg-transparent">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#8B5CF6] to-[#6366F1] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/20">
+                        <span class="material-symbols-outlined text-white">rocket_launch</span>
                     </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#11131F]">Launch</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Continuous testing and optimization to ensure a flawless experience upon go-live.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="py-24 px-6 overflow-hidden">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <div class="space-y-8 order-2 lg:order-1">
-                        <h2 class="text-4xl md:text-6xl font-black text-white leading-tight">Featured <br/><span class="text-gradient">Highlight</span></h2>
-                        <div class="space-y-4">
-                            <p class="text-lg text-slate-400">
-                                Nexus Portal represents our most ambitious project to date. A fully decentralized interface for managing cross-chain digital assets with zero latency.
-                            </p>
-                            <ul class="space-y-3">
-                                <li class="flex items-center gap-3 font-semibold text-slate-200">
-                                    <span class="material-symbols-outlined text-electric">check_circle</span>
-                                    Web3 Architecture Integration
-                                </li>
-                                <li class="flex items-center gap-3 font-semibold text-slate-200">
-                                    <span class="material-symbols-outlined text-electric">check_circle</span>
-                                    Advanced Data Visualization
-                                </li>
-                                <li class="flex items-center gap-3 font-semibold text-slate-200">
-                                    <span class="material-symbols-outlined text-electric">check_circle</span>
-                                    Ultra-Responsive Dashboard Design
-                                </li>
-                            </ul>
-                        </div>
-                        <button class="px-10 py-5 btn-primary text-white rounded-2xl font-bold shadow-xl shadow-royal/20 hover:scale-105 transition-all">
-                            Launch Case Study
-                        </button>
-                    </div>
-                    <div class="relative order-1 lg:order-2 group">
-                        <div class="absolute -inset-4 bg-gradient-to-r from-royal to-electric opacity-30 blur-2xl group-hover:opacity-50 transition-opacity"></div>
-                        <div class="relative glass-card border border-white/10 rounded-3xl overflow-hidden aspect-square">
-                            <img alt="Dashboard Interface" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5NsEzzXCFwmrHjd8AK20BokOggqb5bCCeoE177rHbIzjX8Agbtqr72Q0SwgOIrxY1s3ToflYSmsMkY-KJgG5LL9MlgKiZCoEMTr4h8CnLHPTQCpAAb6yH0AtxGmlzJzXiPA2jKgOjiB_ykmCO-SvcdKMrfgy4-jjCoMnX3f970X2UULmgMN8bNRP0ow-qRR5CN5plbAE5OtQPzOqoYNd1QDqWhbKIt0p-4NNLAHpU91M6iEzjQpWsz8Uu2CFvjMYdWMnAhLJ5ge8T" referrerpolicy="no-referrer"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 px-6">
-            <div class="max-w-5xl mx-auto relative overflow-hidden rounded-[3rem] bg-gradient-to-r from-royal to-electric p-12 md:p-24 text-center text-white">
-                <div class="absolute inset-0 bg-black/20"></div>
-                <div class="relative z-10 space-y-8">
-                    <h2 class="text-4xl md:text-6xl font-black leading-tight">Your Project Could Be <br/> The Next Success Story</h2>
-                    <p class="text-xl text-white/80 max-w-2xl mx-auto">
-                        Ready to elevate your digital presence with Royal Aurora designs? Let's build something extraordinary together.
-                    </p>
-                    <div class="pt-6">
-                        <a href="./contact.html" class="bg-white text-midnight px-12 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-2xl inline-block">
-                            Start Your Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- CTA -->
+    <section class="py-24 px-8">
+        <div class="max-w-5xl mx-auto bg-gradient-to-br from-[#6B46C1] via-[#4C51BF] to-[#2B6CB0] rounded-[3rem] p-12 md:p-20 text-center shadow-2xl shadow-blue-900/20">
+            <h2 class="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">Your Project Could Be <br/>The Next Success Story</h2>
+            <p class="text-blue-100 mb-10 max-w-2xl mx-auto text-lg">Ready to elevate your digital presence with Royal Aurora designs? Let's build something extraordinary together.</p>
+            
+            <a href="./contact.html" class="inline-block bg-white hover:bg-slate-50 px-10 py-4 rounded-xl font-bold text-[#11131F] transition-colors shadow-lg">Start Your Project</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-black pt-20 pb-10 px-8 border-t border-white/5">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-                <div class="md:col-span-2">
-                    <div class="text-3xl font-black italic mb-6">GEN<span class="text-electric">ESIS</span></div>
-                    <p class="text-slate-500 max-w-sm">Designing the future, today. A premium digital studio for brands that dare to lead.</p>
+    <footer class="bg-white py-16 px-8 border-t border-black/5 mt-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <!-- Brand -->
+            <div class="lg:col-span-1">
+                <a href="./index.html" class="flex items-center gap-2 text-xl font-black tracking-tighter mb-6">
+                    <div class="w-6 h-6 rounded bg-gradient-to-br from-[#8B5CF6] to-[#3B82F6] flex items-center justify-center">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="white"/>
+                            <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    GENESIS
+                </a>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Leading digital agency specializing in premium web experiences, e-commerce, and creative storytelling.
+                </p>
+            </div>
+            
+            <!-- Services -->
+            <div>
+                <h4 class="font-bold text-[#11131F] mb-6">Services</h4>
+                <ul class="space-y-4 text-sm text-slate-500">
+                    <li><a href="#" class="hover:text-[#F05A22] transition-colors">UI/UX Design</a></li>
+                    <li><a href="#" class="hover:text-[#F05A22] transition-colors">Web Development</a></li>
+                    <li><a href="#" class="hover:text-[#F05A22] transition-colors">Mobile Apps</a></li>
+                    <li><a href="#" class="hover:text-[#F05A22] transition-colors">Digital Marketing</a></li>
+                </ul>
+            </div>
+            
+            <!-- Company -->
+            <div>
+                <h4 class="font-bold text-[#11131F] mb-6">Company</h4>
+                <ul class="space-y-4 text-sm text-slate-500">
+                    <li><a href="./about.html" class="hover:text-[#F05A22] transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-[#F05A22] transition-colors">Our Team</a></li>
+                    <li><a href="#" class="hover:text-[#F05A22] transition-colors">Careers</a></li>
+                    <li><a href="./contact.html" class="hover:text-[#F05A22] transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Newsletter -->
+            <div>
+                <h4 class="font-bold text-[#11131F] mb-6">Newsletter</h4>
+                <div class="flex items-center border border-black/10 rounded-xl overflow-hidden mb-6 bg-slate-50">
+                    <input type="email" placeholder="Your email" class="w-full bg-transparent border-none focus:ring-0 text-sm px-4 py-3 text-[#11131F] placeholder-slate-400">
+                    <button class="bg-[#F05A22] hover:bg-[#D94E1A] text-white px-4 py-3 transition-colors flex items-center justify-center">
+                        <span class="material-symbols-outlined text-sm">send</span>
+                    </button>
                 </div>
-                <div>
-                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white">Navigation</h4>
-                    <ul class="space-y-4 text-slate-400">
-                        <li><a href="./about.html" class="hover:text-electric">About</a></li>
-                        <li><a href="./services.html" class="hover:text-electric">Services</a></li>
-                        <li><a href="./portfolio.html" class="hover:text-electric">Work</a></li>
-                        <li><a href="./contact.html" class="hover:text-electric">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white">Social</h4>
-                    <ul class="space-y-4 text-slate-400">
-                        <li><a href="#" class="hover:text-royal">Instagram</a></li>
-                        <li><a href="#" class="hover:text-royal">Twitter/X</a></li>
-                        <li><a href="#" class="hover:text-royal">LinkedIn</a></li>
-                        <li><a href="#" class="hover:text-royal">Dribbble</a></li>
-                    </ul>
+                <div class="flex gap-4 text-slate-400">
+                    <a href="#" class="hover:text-[#11131F] transition-colors"><span class="material-symbols-outlined text-xl">public</span></a>
+                    <a href="#" class="hover:text-[#11131F] transition-colors"><span class="material-symbols-outlined text-xl">share</span></a>
+                    <a href="#" class="hover:text-[#11131F] transition-colors"><span class="material-symbols-outlined text-xl">alternate_email</span></a>
                 </div>
             </div>
-            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-600 text-xs uppercase tracking-widest">
-                <div>© 2024 GENESIS DIGITAL STUDIO. All Rights Reserved.</div>
-                <div class="flex gap-8">
-                    <a href="mailto:hello@genesis.studio" class="text-white font-bold hover:text-electric transition-colors">hello@genesis.studio</a>
-                </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <div>© 2024 GENESIS Digital Agency. All rights reserved.</div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-[#11131F] transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-[#11131F] transition-colors">Terms of Service</a>
             </div>
         </div>
     </footer>

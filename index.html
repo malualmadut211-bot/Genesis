@@ -9,109 +9,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="bg-midnight text-white font-sans overflow-x-hidden">
+<body class="bg-[#070B1A] text-white font-sans overflow-x-hidden">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 py-6 px-8 flex justify-between items-center glass-card border-none bg-transparent">
-        <a href="./index.html" class="text-2xl font-black tracking-tighter italic">GEN<span class="text-electric">ESIS</span></a>
+        <a href="./index.html" class="text-2xl font-black tracking-tighter italic">GEN<span class="text-[#00D4FF]">ESIS</span></a>
         <div class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
-            <a href="./about.html" class="hover:text-electric transition-colors">About</a>
-            <a href="./services.html" class="hover:text-electric transition-colors">Services</a>
-            <a href="./portfolio.html" class="hover:text-electric transition-colors">Work</a>
-            <a href="./contact.html" class="hover:text-electric transition-colors">Contact</a>
+            <a href="./index.html" class="hover:text-[#00D4FF] transition-colors">Home</a>
+            <a href="./about.html" class="hover:text-[#00D4FF] transition-colors">About</a>
+            <a href="./services.html" class="hover:text-[#00D4FF] transition-colors">Services</a>
+            <a href="./portfolio.html" class="hover:text-[#00D4FF] transition-colors">Work</a>
+            <a href="./contact.html" class="hover:text-[#00D4FF] transition-colors">Contact</a>
         </div>
         <div class="flex items-center gap-4">
-            <a href="./contact.html" class="hidden md:block bg-white/10 hover:bg-white/20 px-6 py-2 rounded-full text-sm font-bold border border-white/20">Start Project</a>
+            <a href="./contact.html" class="hidden md:block bg-white/5 hover:bg-white/10 px-6 py-2 rounded-full text-sm font-bold border border-white/10 transition-colors">Menu</a>
             <button id="mobile-menu-btn" class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-midnight/95 backdrop-blur-xl flex-col items-center justify-center gap-8 hidden">
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#070B1A]/95 backdrop-blur-xl flex-col items-center justify-center gap-8 hidden">
         <button id="close-menu-btn" class="absolute top-8 right-8 text-white"><span class="material-symbols-outlined text-3xl">close</span></button>
-        <a href="./about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">About</a>
-        <a href="./services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Services</a>
-        <a href="./portfolio.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Work</a>
-        <a href="./contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Contact</a>
+        <a href="./index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#00D4FF] transition-colors">Home</a>
+        <a href="./about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#00D4FF] transition-colors">About</a>
+        <a href="./services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#00D4FF] transition-colors">Services</a>
+        <a href="./portfolio.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#00D4FF] transition-colors">Work</a>
+        <a href="./contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-[#00D4FF] transition-colors">Contact</a>
     </div>
 
     <!-- Hero Section -->
-    <header class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+    <header class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden bg-[#070B1A]">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full pointer-events-none">
             <div class="aurora-glow absolute top-[-10%] left-[-10%] w-[50%] h-[50%] animate-glow-spin rounded-full"></div>
             <div class="aurora-glow absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] animate-glow-spin rounded-full" style="animation-delay: -5s;"></div>
         </div>
-        <div class="max-w-6xl mx-auto text-center relative z-10">
-            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tighter">
-                We Build The Future of <br/><span class="text-gradient">Digital Experiences.</span>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-[1.1] tracking-tighter">
+                We Build The Future of <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6A4CFF] to-[#00D4FF]">Digital Experiences.</span>
             </h1>
-            <p class="text-lg md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 font-light">
+            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
                 GENESIS is a creative digital studio designing websites, ecommerce platforms, and digital content that help brands grow online.
             </p>
-            <div class="flex flex-col md:flex-row gap-6 justify-center">
-                <a href="./portfolio.html" class="btn-primary px-10 py-5 rounded-xl font-bold text-lg text-white">View Our Work</a>
-                <a href="./contact.html" class="glass-card px-10 py-5 rounded-xl font-bold text-lg text-white">Start a Project</a>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="./portfolio.html" class="bg-gradient-to-r from-[#6A4CFF] to-[#00D4FF] px-8 py-4 rounded-xl font-bold text-lg text-white hover:opacity-90 transition-opacity w-full sm:w-auto">View Our Work</a>
+                <a href="./contact.html" class="bg-[#0F1633] border border-white/10 px-8 py-4 rounded-xl font-bold text-lg text-white hover:bg-white/5 transition-colors w-full sm:w-auto">Start a Project</a>
             </div>
         </div>
     </header>
 
     <!-- Agency Intro -->
-    <section class="py-24 px-8 border-y border-white/5 bg-white/[0.01]">
+    <section class="py-24 px-8 bg-[#0A0F24]">
         <div class="max-w-4xl mx-auto text-center">
-            <div class="inline-block px-4 py-1 rounded-full border border-royal/30 bg-royal/10 text-royal font-bold text-xs uppercase tracking-widest mb-6">Who We Are</div>
+            <div class="inline-block px-4 py-1.5 rounded-full border border-[#6A4CFF]/30 bg-[#6A4CFF]/10 text-[#6A4CFF] font-bold text-xs uppercase tracking-widest mb-8">Who We Are</div>
             <h2 class="text-3xl md:text-5xl font-bold leading-tight mb-8">
-                GENESIS is a creative agency built by digital creators who combine <span class="text-royal">technology</span>, <span class="text-electric">strategy</span>, and storytelling.
+                GENESIS is a creative agency built by digital creators who combine <span class="text-[#6A4CFF]">technology</span>, <span class="text-[#00D4FF]">strategy</span>, and storytelling.
             </h2>
-            <p class="text-xl text-slate-500 leading-relaxed">
+            <p class="text-lg md:text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto">
                 We bridge the gap between imagination and reality. Our team focuses on web development, digital growth, and high-impact creative content for the next generation of global brands.
             </p>
         </div>
     </section>
 
     <!-- Services Preview -->
-    <section class="py-32 px-8 relative">
+    <section class="py-32 px-8 relative bg-[#070B1A]">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl md:text-6xl font-black mb-20 text-center">Core <span class="text-gradient">Capabilities</span></h2>
+            <h2 class="text-4xl md:text-6xl font-black mb-20 text-center">Core <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6A4CFF] to-[#00D4FF]">Capabilities</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="glass-card p-10 rounded-3xl group">
-                    <div class="w-16 h-16 bg-royal/20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-royal/40 transition-colors">
-                        <span class="material-symbols-outlined text-royal text-3xl">code_blocks</span>
+                <div class="bg-[#0A0F24] border border-white/5 p-10 rounded-2xl group hover:border-[#6A4CFF]/50 transition-colors">
+                    <div class="w-14 h-14 bg-[#6A4CFF]/10 rounded-xl flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-[#6A4CFF] text-2xl">code</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Web Development</h3>
-                    <p class="text-slate-400 mb-6">Bespoke digital experiences built with the fastest modern frameworks for speed and scale.</p>
-                    <div class="h-1 w-0 group-hover:w-full bg-electric transition-all duration-500"></div>
+                    <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Bespoke digital experiences built with the fastest modern frameworks for speed and scale.</p>
                 </div>
-                <div class="glass-card p-10 rounded-3xl group">
-                    <div class="w-16 h-16 bg-electric/20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-electric/40 transition-colors">
-                        <span class="material-symbols-outlined text-electric text-3xl">shopping_cart</span>
+                <div class="bg-[#0A0F24] border border-white/5 p-10 rounded-2xl group hover:border-[#00D4FF]/50 transition-colors">
+                    <div class="w-14 h-14 bg-[#00D4FF]/10 rounded-xl flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-[#00D4FF] text-2xl">lock</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">E-Commerce</h3>
-                    <p class="text-slate-400 mb-6">High-converting online stores that merge premium aesthetics with seamless checkout flows.</p>
-                    <div class="h-1 w-0 group-hover:w-full bg-royal transition-all duration-500"></div>
+                    <h3 class="text-xl font-bold mb-4">E-Commerce</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">High-converting online stores that merge premium aesthetics with seamless checkout flows.</p>
                 </div>
-                <div class="glass-card p-10 rounded-3xl group">
-                    <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
-                        <span class="material-symbols-outlined text-white text-3xl">photo_camera</span>
+                <div class="bg-[#0A0F24] border border-white/5 p-10 rounded-2xl group hover:border-white/50 transition-colors">
+                    <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-white text-2xl">videocam</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Content Creation</h3>
-                    <p class="text-slate-400 mb-6">Cinematic 3D visuals, motion graphics, and storytelling that captivates your audience.</p>
-                    <div class="h-1 w-0 group-hover:w-full bg-electric transition-all duration-500"></div>
+                    <h3 class="text-xl font-bold mb-4">Content Creation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Cinematic 3D visuals, motion graphics, and storytelling that captivates your audience.</p>
                 </div>
-                <div class="glass-card p-10 rounded-3xl group">
-                    <div class="w-16 h-16 bg-royal/20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-royal/40 transition-colors">
-                        <span class="material-symbols-outlined text-royal text-3xl">hub</span>
+                <div class="bg-[#0A0F24] border border-white/5 p-10 rounded-2xl group hover:border-[#6A4CFF]/50 transition-colors">
+                    <div class="w-14 h-14 bg-[#6A4CFF]/10 rounded-xl flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-[#6A4CFF] text-2xl">trending_up</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Digital Strategy</h3>
-                    <p class="text-slate-400 mb-6">Data-driven roadmaps designed to scale your brand and dominate your market niche.</p>
-                    <div class="h-1 w-0 group-hover:w-full bg-electric transition-all duration-500"></div>
+                    <h3 class="text-xl font-bold mb-4">Digital Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Data-driven roadmaps designed to scale your brand and dominate your market niche.</p>
                 </div>
-                <div class="glass-card p-10 rounded-3xl group lg:col-span-2">
-                    <div class="flex flex-col md:flex-row gap-8 items-center">
-                        <div class="w-16 h-16 shrink-0 bg-electric/20 rounded-2xl flex items-center justify-center group-hover:bg-electric/40 transition-colors">
-                            <span class="material-symbols-outlined text-electric text-3xl">rocket_launch</span>
+                <div class="bg-[#0A0F24] border border-white/5 p-10 rounded-2xl group lg:col-span-2 hover:border-[#00D4FF]/50 transition-colors">
+                    <div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+                        <div class="w-14 h-14 shrink-0 bg-[#00D4FF]/10 rounded-xl flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[#00D4FF] text-2xl">attach_money</span>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold mb-4">Investor & Startup Consulting</h3>
-                            <p class="text-slate-400">Specialized technical consulting for startups looking to raise capital through superior digital product demos.</p>
+                            <h3 class="text-xl font-bold mb-4">Investor & Startup Consulting</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Specialized technical consulting for startups looking to raise capital through superior digital product demos.</p>
                         </div>
                     </div>
                 </div>
@@ -120,93 +118,128 @@
     </section>
 
     <!-- Featured Work -->
-    <section class="py-32 px-8 bg-midnight-glow">
+    <section class="py-32 px-8 bg-[#050813]">
         <div class="max-w-7xl mx-auto">
-            <div class="flex justify-between items-end mb-20">
+            <div class="flex justify-between items-end mb-16 border-b border-white/10 pb-6">
                 <div>
-                    <h2 class="text-4xl md:text-6xl font-black mb-4">Selected <span class="text-gradient">Projects</span></h2>
+                    <h2 class="text-4xl md:text-6xl font-black mb-4">Selected <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6A4CFF] to-[#00D4FF]">Projects</span></h2>
                     <p class="text-slate-400 text-lg">A glimpse into the digital worlds we've built.</p>
                 </div>
-                <a href="./portfolio.html" class="hidden md:block text-electric font-bold border-b-2 border-electric pb-2 hover:text-white hover:border-white transition-all">All Case Studies</a>
+                <a href="./portfolio.html" class="hidden md:block text-[#00D4FF] font-bold border-b-2 border-[#00D4FF] pb-1 hover:text-white hover:border-white transition-all">All Case Studies</a>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-3xl aspect-[16/10] mb-8 glass-card border-none">
-                        <img alt="NeoCommerce Project" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2-XcvyDN4C8FSmUds26dAKmS2DPUIeWdjG5tAMKI2pz50gAPsy3LInVcEw9eBss-bQzsF4rLod1at7i64gZ08L8CGYEBDjOjVUU0nEXMHFc2zFqmA8FSCH_7lymH6HGy3RZ6xlAcoaaifs9gS7UaGroY0LedjEIzN3gOm2yPGBmVHx_gzYFvSs2COmdhUMaK2wgUyW7tUORvFp39P9APpMdZ9LWwY529P7lvmW3L7zehZ0QcQRsnT8AgtXyp0kGEB4VtRYUu1MpJL" referrerpolicy="no-referrer"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-midnight/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                            <a href="./portfolio.html" class="btn-primary px-6 py-3 rounded-xl font-bold text-white">View Project</a>
-                        </div>
+                    <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-6 bg-slate-800">
+                        <img alt="NeoCommerce Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" referrerpolicy="no-referrer"/>
                     </div>
-                    <div class="flex gap-3 mb-4">
-                        <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 border border-slate-700 px-3 py-1 rounded-full">E-Commerce</span>
-                        <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 border border-slate-700 px-3 py-1 rounded-full">Web3</span>
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 border border-slate-700 px-3 py-1 rounded-full">E-Commerce</span>
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 border border-slate-700 px-3 py-1 rounded-full">Web3</span>
                     </div>
-                    <h3 class="text-3xl font-bold group-hover:text-electric transition-colors">NeoCommerce Ecosystem</h3>
-                    <p class="text-slate-400 mt-2">Next-gen retail platform for digital assets.</p>
+                    <h3 class="text-2xl font-bold group-hover:text-[#00D4FF] transition-colors">NeoCommerce Ecosystem</h3>
+                    <p class="text-slate-400 mt-2 text-sm">Next-gen retail platform for digital assets.</p>
                 </div>
                 <div class="group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-3xl aspect-[16/10] mb-8 glass-card border-none">
-                        <img alt="Aether Studio Project" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy4OlWXtkr1uWlpgsesiMorvFIA8VMvbKTpWDqfJJIZfl7uRQGYvDDmZ10WCSTCWEpHFWz1fSXMkwfhHGYgMckryRA-bB7aIXguREXik8UoEgUMj47rLsxsv5ouensGMyGTooV9EUdjVrflTtZ_rVFd4LgL4W0d-_lVbNztPapL8c7Diu6cTaih_jDKXhFrBLHl-4iNjIoFfy565kN-z4zuSsb3xDqGxSyDokwYWtf9s49oc72J7ZjGUB8mNXMbkEH-8XnSgr_NU-d" referrerpolicy="no-referrer"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-midnight/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                            <a href="./portfolio.html" class="btn-primary px-6 py-3 rounded-xl font-bold text-white">View Project</a>
-                        </div>
+                    <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-6 bg-slate-800">
+                        <img alt="Aether Studio Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2832&auto=format&fit=crop" referrerpolicy="no-referrer"/>
                     </div>
-                    <div class="flex gap-3 mb-4">
-                        <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 border border-slate-700 px-3 py-1 rounded-full">Creative</span>
-                        <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 border border-slate-700 px-3 py-1 rounded-full">3D Content</span>
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 border border-slate-700 px-3 py-1 rounded-full">Creative</span>
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 border border-slate-700 px-3 py-1 rounded-full">3D Content</span>
                     </div>
-                    <h3 class="text-3xl font-bold group-hover:text-royal transition-colors">Aether Creative Studio</h3>
-                    <p class="text-slate-400 mt-2">Interactive portfolio for a Hollywood visual effects house.</p>
+                    <h3 class="text-2xl font-bold group-hover:text-[#6A4CFF] transition-colors">Aether Creative Studio</h3>
+                    <p class="text-slate-400 mt-2 text-sm">Interactive portfolio for a Hollywood visual effects house.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Process -->
-    <section class="py-32 px-8 bg-black/40">
+    <section class="py-32 px-8 bg-[#070B1A]">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl md:text-6xl font-black mb-20 text-center">The <span class="text-gradient">Genesis</span> Method</h2>
+            <h2 class="text-4xl md:text-6xl font-black mb-24 text-center">The <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6A4CFF] to-[#00D4FF]">Genesis</span> Method</h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-                <div class="hidden md:block absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-y-12"></div>
+                <div class="hidden md:block absolute top-12 left-[12.5%] right-[12.5%] h-px bg-white/10"></div>
                 <div class="text-center relative z-10">
-                    <div class="w-24 h-24 bg-midnight rounded-full border-2 border-royal flex items-center justify-center mx-auto mb-8 shadow-[0_0_20px_rgba(106,76,255,0.3)]">
-                        <span class="text-3xl font-black italic">01</span>
+                    <div class="w-24 h-24 bg-[#070B1A] rounded-full border-2 border-[#6A4CFF] flex items-center justify-center mx-auto mb-8 shadow-[0_0_30px_rgba(106,76,255,0.2)]">
+                        <span class="text-2xl font-bold italic">01</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Discovery</h3>
-                    <p class="text-slate-500 text-sm">Auditing your brand and defining core objectives for the project.</p>
+                    <h3 class="text-lg font-bold mb-3">Discovery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed px-4">Auditing your brand and defining core objectives for the project.</p>
                 </div>
                 <div class="text-center relative z-10">
-                    <div class="w-24 h-24 bg-midnight rounded-full border-2 border-electric flex items-center justify-center mx-auto mb-8 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
-                        <span class="text-3xl font-black italic">02</span>
+                    <div class="w-24 h-24 bg-[#070B1A] rounded-full border-2 border-[#00D4FF] flex items-center justify-center mx-auto mb-8 shadow-[0_0_30px_rgba(0,212,255,0.2)]">
+                        <span class="text-2xl font-bold italic">02</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Design</h3>
-                    <p class="text-slate-500 text-sm">Creating high-fidelity prototypes and cinematic visual identities.</p>
+                    <h3 class="text-lg font-bold mb-3">Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed px-4">Creating high-fidelity prototypes and cinematic visual identities.</p>
                 </div>
                 <div class="text-center relative z-10">
-                    <div class="w-24 h-24 bg-midnight rounded-full border-2 border-royal flex items-center justify-center mx-auto mb-8 shadow-[0_0_20px_rgba(106,76,255,0.3)]">
-                        <span class="text-3xl font-black italic">03</span>
+                    <div class="w-24 h-24 bg-[#070B1A] rounded-full border-2 border-[#6A4CFF] flex items-center justify-center mx-auto mb-8 shadow-[0_0_30px_rgba(106,76,255,0.2)]">
+                        <span class="text-2xl font-bold italic">03</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Development</h3>
-                    <p class="text-slate-500 text-sm">Precision engineering with optimized code and interactive elements.</p>
+                    <h3 class="text-lg font-bold mb-3">Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed px-4">Precision engineering with optimized code and interactive elements.</p>
                 </div>
                 <div class="text-center relative z-10">
-                    <div class="w-24 h-24 bg-midnight rounded-full border-2 border-electric flex items-center justify-center mx-auto mb-8 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
-                        <span class="text-3xl font-black italic">04</span>
+                    <div class="w-24 h-24 bg-[#070B1A] rounded-full border-2 border-[#00D4FF] flex items-center justify-center mx-auto mb-8 shadow-[0_0_30px_rgba(0,212,255,0.2)]">
+                        <span class="text-2xl font-bold italic">04</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Launch</h3>
-                    <p class="text-slate-500 text-sm">Deployment, final testing, and strategy for long-term growth.</p>
+                    <h3 class="text-lg font-bold mb-3">Launch</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed px-4">Deployment, final testing, and strategy for long-term growth.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Testimonials -->
+    <section class="py-24 px-8 bg-[#0A0F24]">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-[#070B1A] border border-white/5 p-8 rounded-2xl">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 overflow-hidden">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Alex Rivera" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white">Alex Rivera</h4>
+                        <p class="text-xs text-slate-500">CEO, TechFlow</p>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm italic leading-relaxed">"GENESIS transformed our digital presence. Their attention to detail and futuristic design language put us years ahead of our competitors."</p>
+            </div>
+            <div class="bg-[#070B1A] border border-white/5 p-8 rounded-2xl">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 overflow-hidden">
+                        <img src="https://i.pravatar.cc/150?img=44" alt="Sarah Chen" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white">Sarah Chen</h4>
+                        <p class="text-xs text-slate-500">Founder, Luminous</p>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm italic leading-relaxed">"The most creative team we've ever worked with. They don't just build websites; they build digital worlds."</p>
+            </div>
+            <div class="bg-[#070B1A] border border-white/5 p-8 rounded-2xl">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 overflow-hidden">
+                        <img src="https://i.pravatar.cc/150?img=33" alt="Marcus Thorne" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white">Marcus Thorne</h4>
+                        <p class="text-xs text-slate-500">VP Marketing, NeoGlobal</p>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm italic leading-relaxed">"Their data-driven approach combined with elite design made our rebrand the most successful project of the year."</p>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA -->
-    <section class="py-40 px-8 relative overflow-hidden">
-        <div class="absolute inset-0 aurora-glow scale-150 opacity-20 pointer-events-none"></div>
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <h2 class="text-5xl md:text-8xl font-black mb-10 leading-none">Ready To Build Something <br/><span class="text-gradient">Powerful?</span></h2>
-            <p class="text-2xl text-slate-400 mb-12">Let's collaborate on the future of your brand.</p>
-            <a href="./contact.html" class="btn-primary px-16 py-6 rounded-2xl text-xl font-black tracking-tight inline-block text-white">START YOUR PROJECT</a>
+    <section class="py-40 px-8 relative overflow-hidden bg-gradient-to-b from-[#070B1A] to-[#0F1633]">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">Ready To Build <br/>Something <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6A4CFF] to-[#00D4FF]">Powerful?</span></h2>
+            <p class="text-xl text-slate-400 mb-12">Let's collaborate on the future of your brand.</p>
+            <a href="./contact.html" class="bg-gradient-to-r from-[#6A4CFF] to-[#00D4FF] px-10 py-5 rounded-xl text-lg font-bold tracking-wide inline-block text-white hover:opacity-90 transition-opacity">START YOUR PROJECT</a>
         </div>
     </section>
 
@@ -215,32 +248,32 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
                 <div class="md:col-span-2">
-                    <div class="text-3xl font-black italic mb-6">GEN<span class="text-electric">ESIS</span></div>
-                    <p class="text-slate-500 max-w-sm">Designing the future, today. A premium digital studio for brands that dare to lead.</p>
+                    <div class="text-3xl font-black italic mb-6">GEN<span class="text-[#00D4FF]">ESIS</span></div>
+                    <p class="text-slate-500 max-w-sm text-sm leading-relaxed">Designing the future, today. A premium digital studio for brands that dare to lead.</p>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white">Navigation</h4>
-                    <ul class="space-y-4 text-slate-400">
-                        <li><a href="./about.html" class="hover:text-electric">About</a></li>
-                        <li><a href="./services.html" class="hover:text-electric">Services</a></li>
-                        <li><a href="./portfolio.html" class="hover:text-electric">Work</a></li>
-                        <li><a href="./contact.html" class="hover:text-electric">Contact</a></li>
+                    <h4 class="font-bold mb-6 text-xs uppercase tracking-widest text-white">Navigation</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a href="./about.html" class="hover:text-[#00D4FF]">About</a></li>
+                        <li><a href="./services.html" class="hover:text-[#00D4FF]">Services</a></li>
+                        <li><a href="./portfolio.html" class="hover:text-[#00D4FF]">Work</a></li>
+                        <li><a href="./contact.html" class="hover:text-[#00D4FF]">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white">Social</h4>
-                    <ul class="space-y-4 text-slate-400">
-                        <li><a href="#" class="hover:text-royal">Instagram</a></li>
-                        <li><a href="#" class="hover:text-royal">Twitter/X</a></li>
-                        <li><a href="#" class="hover:text-royal">LinkedIn</a></li>
-                        <li><a href="#" class="hover:text-royal">Dribbble</a></li>
+                    <h4 class="font-bold mb-6 text-xs uppercase tracking-widest text-white">Social</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a href="#" class="hover:text-[#6A4CFF]">Instagram</a></li>
+                        <li><a href="#" class="hover:text-[#6A4CFF]">Twitter/X</a></li>
+                        <li><a href="#" class="hover:text-[#6A4CFF]">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-[#6A4CFF]">Dribbble</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-600 text-xs uppercase tracking-widest">
-                <div>© 2024 GENESIS DIGITAL STUDIO. All Rights Reserved.</div>
+            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-600 text-[10px] uppercase tracking-widest font-bold">
+                <div>© 2024 GENESIS DIGITAL STUDIO. ALL RIGHTS RESERVED.</div>
                 <div class="flex gap-8">
-                    <a href="mailto:hello@genesis.studio" class="text-white font-bold hover:text-electric transition-colors">hello@genesis.studio</a>
+                    <a href="mailto:hello@genesis.studio" class="text-white hover:text-[#00D4FF] transition-colors">HELLO@GENESIS.STUDIO</a>
                 </div>
             </div>
         </div>
