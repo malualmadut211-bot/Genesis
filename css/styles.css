@@ -83,3 +83,113 @@ body {
 #mobile-menu.active {
     display: flex;
 }
+
+/* --- New Animations & Visual Effects --- */
+
+/* 1. Page Transitions */
+body {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+body.page-loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+body.page-leaving {
+    opacity: 0;
+    transform: translateY(-15px);
+}
+
+/* 4. Aurora Gradient Shift */
+@keyframes aurora-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.animate-aurora {
+    background-size: 200% 200%;
+    animation: aurora-shift 10s ease infinite;
+}
+
+/* 5. Floating Animation */
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(4deg); }
+}
+.animate-float {
+    animation: float-slow 6s ease-in-out infinite;
+}
+.animate-float-delayed {
+    animation: float-slow 7s ease-in-out infinite 1.5s;
+}
+
+/* 10. Card Hover Lift & Glow */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(106, 76, 255, 0.15);
+    border-color: rgba(106, 76, 255, 0.5);
+}
+
+/* 11. Icon Rotation */
+.hover-lift .icon-rotate {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hover-lift:hover .icon-rotate {
+    transform: rotate(8deg) scale(1.05);
+}
+
+/* 13. Project Card Hover Effects (Tilt is handled in JS, Zoom is here) */
+.tilt-card img {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.tilt-card:hover img {
+    transform: scale(1.05);
+}
+
+/* 16. Aurora Gradient Hover */
+.btn-aurora {
+    background-size: 200% auto;
+    transition: background-position 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+}
+.btn-aurora:hover {
+    background-position: right center;
+    box-shadow: 0 0 20px rgba(106, 76, 255, 0.4);
+}
+
+/* 17. Button Press Effect */
+.btn-press:active {
+    transform: scale(0.96);
+}
+
+/* 20. Input Field Focus Glow */
+.input-glow {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.input-glow:focus {
+    border-color: #6A4CFF;
+    box-shadow: 0 0 15px rgba(106, 76, 255, 0.3);
+    transform: scale(1.01);
+    outline: none;
+}
+
+/* 22. Footer Pulse */
+@keyframes pulse-glow {
+    0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 2px rgba(255,255,255,0.2)); }
+    50% { opacity: 1; filter: drop-shadow(0 0 8px rgba(255,255,255,0.8)); }
+}
+.footer-icon:hover {
+    animation: pulse-glow 2s infinite;
+}
+
+/* Sticky Navbar Blur */
+.navbar-scrolled {
+    background: rgba(11, 13, 23, 0.85) !important;
+    backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
