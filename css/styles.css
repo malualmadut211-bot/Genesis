@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: #070B1A;
+    color: #f1f5f9;
+    overflow-x: hidden;
+}
+
+.glass, .glass-card, .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover, .service-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: #6A4CFF;
+    box-shadow: 0 0 30px rgba(106, 76, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.aurora-bg {
+    background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(14, 165, 233, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(236, 91, 19, 0.05) 0%, transparent 60%);
+}
+
+.aurora-glow {
+    filter: blur(100px);
+    background: linear-gradient(45deg, #6A4CFF, #00D4FF);
+    opacity: 0.15;
+}
+
+.royal-aurora-gradient, .aurora-gradient, .btn-primary {
+    background: linear-gradient(135deg, #6A4CFF 0%, #00D4FF 100%);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-midnight-glow {
+    background: radial-gradient(circle at 50% 50%, #0c122b 0%, #070B1A 100%);
+}
+
+.btn-primary {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(106, 76, 255, 0.4);
+}
+
+.bg-glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.hero-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(7, 11, 26, 0) 70%);
+    filter: blur(60px);
+    z-index: -1;
+}
+
+/* Mobile menu styles */
+#mobile-menu {
+    display: none;
+}
+#mobile-menu.active {
+    display: flex;
+}

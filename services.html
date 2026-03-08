@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Services | GENESIS Digital Agency</title>
+    <script src="./js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-midnight text-white font-sans overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 py-6 px-8 flex justify-between items-center glass-card border-none bg-transparent">
+        <a href="./index.html" class="text-2xl font-black tracking-tighter italic">GEN<span class="text-electric">ESIS</span></a>
+        <div class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
+            <a href="./about.html" class="hover:text-electric transition-colors">About</a>
+            <a href="./services.html" class="hover:text-electric transition-colors">Services</a>
+            <a href="./portfolio.html" class="hover:text-electric transition-colors">Work</a>
+            <a href="./contact.html" class="hover:text-electric transition-colors">Contact</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="./contact.html" class="hidden md:block bg-white/10 hover:bg-white/20 px-6 py-2 rounded-full text-sm font-bold border border-white/20">Start Project</a>
+            <button id="mobile-menu-btn" class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-midnight/95 backdrop-blur-xl flex-col items-center justify-center gap-8 hidden">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-white"><span class="material-symbols-outlined text-3xl">close</span></button>
+        <a href="./about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">About</a>
+        <a href="./services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Services</a>
+        <a href="./portfolio.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Work</a>
+        <a href="./contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-20">
+        <section class="relative pt-20 pb-32 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-royal/30 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-electric animate-pulse"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-electric">A New Era of Digital</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight text-gradient">
+                    Digital Services That Build Powerful Brands.
+                </h1>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+                    GENESIS provides modern digital solutions that help businesses grow, launch, and scale online with precision and high-end design.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="./contact.html" class="btn-primary px-10 py-4 rounded-xl font-bold text-lg text-white">Start Your Project</a>
+                    <a href="./portfolio.html" class="glass-card px-10 py-4 rounded-xl font-bold text-lg border border-white/10 hover:bg-white/5 transition-all text-white">View Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Core Capabilities</h2>
+                        <p class="text-slate-400 max-w-lg">We combine strategic thinking with technical excellence to deliver world-class digital experiences.</p>
+                    </div>
+                    <div class="h-[1px] flex-grow bg-white/10 mx-8 hidden md:block"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="glass-card p-8 rounded-2xl flex flex-col gap-6 group">
+                        <div class="w-16 h-16 rounded-xl bg-royal/20 flex items-center justify-center text-royal group-hover:bg-royal group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined text-3xl">terminal</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Web Development</h3>
+                            <p class="text-slate-400 leading-relaxed">High-performance custom web applications built with the latest technologies for speed and scale.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-8 rounded-2xl flex flex-col gap-6 group">
+                        <div class="w-16 h-16 rounded-xl bg-electric/20 flex items-center justify-center text-electric group-hover:bg-electric group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined text-3xl">shopping_cart</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">E-Commerce Development</h3>
+                            <p class="text-slate-400 leading-relaxed">Scalable online storefronts designed to maximize conversion rates and streamline customer journeys.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-8 rounded-2xl flex flex-col gap-6 group">
+                        <div class="w-16 h-16 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined text-3xl">photo_camera</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Content Creation</h3>
+                            <p class="text-slate-400 leading-relaxed">High-impact digital media and storytelling that captures attention and builds brand authority.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-8 rounded-2xl flex flex-col gap-6 group">
+                        <div class="w-16 h-16 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined text-3xl">hub</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Digital Strategy</h3>
+                            <p class="text-slate-400 leading-relaxed">Data-driven growth roadmaps and market positioning to ensure long-term competitive advantage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-8 rounded-2xl flex flex-col gap-6 group lg:col-span-2">
+                        <div class="flex flex-col md:flex-row gap-8 items-center">
+                            <div class="w-20 h-20 shrink-0 rounded-xl bg-orange-500/20 flex items-center justify-center text-orange-400 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
+                                <span class="material-symbols-outlined text-4xl">rocket_launch</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Investor Consulting</h3>
+                                <p class="text-slate-400 leading-relaxed">Strategic scaling, fundraising preparation, and pitch deck refinement for high-growth startups looking to secure capital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 bg-white/5 border-y border-white/5">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-royal/20 blur-3xl rounded-full"></div>
+                        <img alt="Web Development Dashboard" class="relative rounded-2xl border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmrFv28OWbeymuP8ExQQyl05QI115EUMooQeYZ5AUg00hIp5kpNEKoR6wM0OYKJDV5RSR19YxE5oR1wvL6_duihs9CEmq2Ga-FPf1M117PtC2r7oVGMxTV2OuTW_XNeGYdldYIkkVEQ2fgrF77CErwo6wkRdkzfRPyGA_i5TDojO65c3ttSHf32jyUQr2Wll1qO61PxzK1isF4VqlWlMkWoe5LsEJYKN3Kc-2Kd_ANjxFTE8vE242xL6onKGT3WIjp71koTClKX9-A" referrerpolicy="no-referrer"/>
+                    </div>
+                    <div>
+                        <div class="text-electric font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined">terminal</span>
+                            WEB DEVELOPMENT
+                        </div>
+                        <h2 class="text-4xl font-black text-white mb-6 leading-tight">High-Performance Custom Engineering</h2>
+                        <p class="text-slate-400 mb-8 leading-relaxed text-lg">
+                            We don't just build websites; we engineer digital foundations. Our web solutions are optimized for performance, SEO, and user retention.
+                        </p>
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-center gap-3 text-slate-300">
+                                <span class="material-symbols-outlined text-royal">check_circle</span>
+                                React, Next.js & Headless CMS architectures
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-300">
+                                <span class="material-symbols-outlined text-royal">check_circle</span>
+                                Mobile-first responsive architectures
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-300">
+                                <span class="material-symbols-outlined text-royal">check_circle</span>
+                                Enterprise-grade security and SSL
+                            </li>
+                        </ul>
+                        <div class="p-6 glass-card rounded-xl border-l-4 border-royal">
+                            <h4 class="font-bold text-white mb-1">Solves:</h4>
+                            <p class="text-sm text-slate-400 italic">Slow load times, poor mobile UX, and lack of technical scalability.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <div class="text-orange-400 font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined">trending_up</span>
+                            INVESTOR CONSULTING
+                        </div>
+                        <h2 class="text-4xl font-black text-white mb-6 leading-tight">Positioning Your Brand for Capital</h2>
+                        <p class="text-slate-400 mb-8 leading-relaxed text-lg">
+                            Navigating the fundraising landscape requires more than a good idea. We help you build the narrative, visuals, and data proof investors crave.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                            <div class="p-4 glass-card rounded-lg border border-white/5">
+                                <h4 class="font-bold text-white mb-2">For Series A/B</h4>
+                                <p class="text-sm text-slate-400">Scale operations and professionalize brand identity for institutional grade scrutiny.</p>
+                            </div>
+                            <div class="p-4 glass-card rounded-lg border border-white/5">
+                                <h4 class="font-bold text-white mb-2">For Seed Stage</h4>
+                                <p class="text-sm text-slate-400">Build MVPs and pitch materials that demonstrate vision and technical viability.</p>
+                            </div>
+                        </div>
+                        <a href="./portfolio.html" class="flex items-center gap-2 text-white font-bold hover:text-orange-400 transition-colors">
+                            Explore Strategy Case Studies <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="order-1 lg:order-2 relative">
+                        <div class="absolute -inset-4 bg-orange-500/10 blur-3xl rounded-full"></div>
+                        <img alt="Strategic Planning" class="relative rounded-2xl border border-white/10 shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTse2s_DiC6HArpJNTYGHfozYgwM5MqkktrET1bbA8DCYQVi0fYmIfr4xT5egEXloQDZuI9mWY6xXkzFcLWIYlgl9g3-mO4I-5BhWnd7zBm9T1UX9ypnWc0jCgz9nLdaLMQHTGsIeLQxsVV90DvjhscW6BfRPsznx4CexGLURIwTHgA2QkwMPQmOGabf45Ies0pYBz2PfK8lsgmiJG0Y56RtePfPY77FlTgWhIzcaKY2RKjov0590b4u77QKkvgkcaTDC5Guy0XpSK" referrerpolicy="no-referrer"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-royal/20 to-electric/20 opacity-10 blur-[150px]"></div>
+            <div class="max-w-4xl mx-auto glass-card rounded-3xl p-12 md:p-20 text-center border-white/10 relative z-10">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">Ready To Build Something Powerful?</h2>
+                <p class="text-slate-300 text-lg mb-10 max-w-xl mx-auto">
+                    Let's discuss how GENESIS can elevate your digital presence and drive measurable growth for your brand.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="./contact.html" class="btn-primary px-12 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-2xl shadow-royal/30 text-white">Start Your Project</a>
+                    <a href="mailto:hello@genesis.digital" class="text-white font-bold hover:underline underline-offset-8">hello@genesis.digital</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-20 pb-10 px-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="md:col-span-2">
+                    <div class="text-3xl font-black italic mb-6">GEN<span class="text-electric">ESIS</span></div>
+                    <p class="text-slate-500 max-w-sm">Designing the future, today. A premium digital studio for brands that dare to lead.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white">Navigation</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="./about.html" class="hover:text-electric">About</a></li>
+                        <li><a href="./services.html" class="hover:text-electric">Services</a></li>
+                        <li><a href="./portfolio.html" class="hover:text-electric">Work</a></li>
+                        <li><a href="./contact.html" class="hover:text-electric">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white">Social</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#" class="hover:text-royal">Instagram</a></li>
+                        <li><a href="#" class="hover:text-royal">Twitter/X</a></li>
+                        <li><a href="#" class="hover:text-royal">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-royal">Dribbble</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-600 text-xs uppercase tracking-widest">
+                <div>© 2024 GENESIS DIGITAL STUDIO. All Rights Reserved.</div>
+                <div class="flex gap-8">
+                    <a href="mailto:hello@genesis.studio" class="text-white font-bold hover:text-electric transition-colors">hello@genesis.studio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact | GENESIS Digital Agency</title>
+    <script src="./js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-midnight text-white font-sans overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 py-6 px-8 flex justify-between items-center glass-card border-none bg-transparent">
+        <a href="./index.html" class="text-2xl font-black tracking-tighter italic">GEN<span class="text-electric">ESIS</span></a>
+        <div class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
+            <a href="./about.html" class="hover:text-electric transition-colors">About</a>
+            <a href="./services.html" class="hover:text-electric transition-colors">Services</a>
+            <a href="./portfolio.html" class="hover:text-electric transition-colors">Work</a>
+            <a href="./contact.html" class="hover:text-electric transition-colors">Contact</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="./contact.html" class="hidden md:block bg-white/10 hover:bg-white/20 px-6 py-2 rounded-full text-sm font-bold border border-white/20">Start Project</a>
+            <button id="mobile-menu-btn" class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-midnight/95 backdrop-blur-xl flex-col items-center justify-center gap-8 hidden">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-white"><span class="material-symbols-outlined text-3xl">close</span></button>
+        <a href="./about.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">About</a>
+        <a href="./services.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Services</a>
+        <a href="./portfolio.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Work</a>
+        <a href="./contact.html" class="text-2xl font-bold uppercase tracking-widest hover:text-electric transition-colors">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-20">
+        <div class="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] rounded-full blur-[120px] -z-10 opacity-40 bg-royal"></div>
+        <div class="absolute bottom-[-100px] right-[-100px] w-[400px] h-[400px] rounded-full blur-[120px] -z-10 opacity-40 bg-electric"></div>
+
+        <section class="max-w-7xl mx-auto px-6 pt-20 pb-16 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block py-1 px-3 rounded-full bg-royal/10 border border-royal/20 text-royal text-xs font-bold tracking-widest uppercase mb-6">Contact Us</span>
+                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight text-white">
+                    Let’s Build Something <span class="text-transparent bg-clip-text bg-gradient-to-r from-royal to-electric">Powerful.</span>
+                </h1>
+                <p class="text-xl text-slate-400 leading-relaxed max-w-2xl">
+                    Have a project idea or business vision? GENESIS is ready to help you turn it into a powerful digital experience.
+                </p>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 pb-24 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5 space-y-12">
+                    <div class="glass-card p-8 rounded-3xl">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Tell us about your project</h3>
+                        <p class="text-slate-400 mb-8">
+                            Our team will review your request and get back to you with the next steps to turn your vision into a digital reality.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 rounded-2xl glass-card flex items-center justify-center text-royal">
+                                    <span class="material-symbols-outlined">rocket_launch</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white">Fast-Track Onboarding</h4>
+                                    <p class="text-sm text-slate-500">Kickstart your project in as little as 48 hours.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 rounded-2xl glass-card flex items-center justify-center text-electric">
+                                    <span class="material-symbols-outlined">verified_user</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white">Secure Partnership</h4>
+                                    <p class="text-sm text-slate-500">Full NDA compliance for all project discussions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6 px-4">
+                        <div class="flex items-center gap-4 group cursor-pointer">
+                            <span class="material-symbols-outlined text-royal group-hover:scale-110 transition-transform">mail</span>
+                            <span class="text-lg font-medium">hello@genesis-agency.com</span>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-royal/20 transition-all">
+                                <img alt="Social media icon" class="w-5 h-5 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRFAQR4D6MIZ3Rd0jIBVsYskx6tVlTnfuQQZMsQVt0iFkEIA3XomzfzptPJFzozrulrdXp19zTAGdgxvnZAsew9fgvfAuoEy3eIpE9pEufYA8B18sn3AsxTaTB3-vYg_5SKPBgCCowDk6kGgERI_DBhBKc7xup2Fa4P5V5-iDaZqx2nOPFpK9iSj4Xy3ZUtYgJs3W4IenvWuzYgt2tUGVX8S7BJV9GUVps2hRzBZX_YyVRpuJDJ5AG54FI4fSl9fE0i53_Vpxazr3P" referrerpolicy="no-referrer" />
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-royal/20 transition-all">
+                                <img alt="Social media icon" class="w-5 h-5 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Sl-mfZMbqvS4qUeEezOw8eJyKDYlRo3HWq2VnTr5kwZ8PuGX2XOHgzQVN_yueM_XBsgT_EGSNx60dhB5pEq_RGQLWdRNgy0FX7p-TEmxXJle6sVzhjnOlSkvRVwHUISl17wuu64FX0XQl4FwIw4iw69HQWUIJm5kduuuAxlfop-s4yaioE-7l8exnULYVpv5qbvsxWexDwf8_86IBPxK_dD0z7Fz9IY40iBLRQfzaz24DolOwjaIhpER0bRSaR2fOgw5LfRb5wzn" referrerpolicy="no-referrer" />
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-royal/20 transition-all">
+                                <img alt="Social media icon" class="w-5 h-5 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxQ0XQPigAZgDzTmgySBpvSnfoNkcF09fzDOviuLP1eTSIVhyMcet9fm94rTio4oRfEOlGBaFFRaanePxKxX8YntA4TtpoN_Ms43Hokj6AeIoac4BHE1t_PZIR3LpIJ0w0ur27G2gVM_GlAUVLoQvq0PYhpqLoq6Wlqd7noUIri4jmwGrGHTbj8_zLx6q0BPjsoW878I5npyaN98dmHCC3FfpsFMtHdtVDxPVP9bGKrgS5Iu01psH6NjE8ecEEhVSLHvvn9g676fuW" referrerpolicy="no-referrer" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 md:p-12 rounded-[2rem] shadow-2xl">
+                        <form class="grid grid-cols-1 md:grid-cols-2 gap-6" onsubmit="event.preventDefault();">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-slate-300 ml-1">Full Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:ring-2 focus:ring-royal focus:border-royal text-white placeholder:text-slate-600 outline-none transition-all" />
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-slate-300 ml-1">Email Address</label>
+                                <input type="email" placeholder="john@company.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:ring-2 focus:ring-royal focus:border-royal text-white placeholder:text-slate-600 outline-none transition-all" />
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-slate-300 ml-1">Company / Brand</label>
+                                <input type="text" placeholder="Agency Inc." class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:ring-2 focus:ring-royal focus:border-royal text-white placeholder:text-slate-600 outline-none transition-all" />
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-slate-300 ml-1">Project Type</label>
+                                <select class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:ring-2 focus:ring-royal focus:border-royal text-white appearance-none outline-none transition-all">
+                                    <option class="bg-midnight">Website Development</option>
+                                    <option class="bg-midnight">E-Commerce Store</option>
+                                    <option class="bg-midnight">Content Creation</option>
+                                    <option class="bg-midnight">Digital Strategy</option>
+                                    <option class="bg-midnight">Other</option>
+                                </select>
+                            </div>
+                            <div class="md:col-span-2 flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-slate-300 ml-1">Estimated Budget</label>
+                                <select class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:ring-2 focus:ring-royal focus:border-royal text-white appearance-none outline-none transition-all">
+                                    <option class="bg-midnight">$5k - $10k</option>
+                                    <option class="bg-midnight">$10k - $25k</option>
+                                    <option class="bg-midnight">$25k - $50k</option>
+                                    <option class="bg-midnight">$50k+</option>
+                                </select>
+                            </div>
+                            <div class="md:col-span-2 flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-slate-300 ml-1">Message</label>
+                                <textarea rows="4" placeholder="Tell us more about your goals..." class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:ring-2 focus:ring-royal focus:border-royal text-white placeholder:text-slate-600 resize-none outline-none transition-all"></textarea>
+                            </div>
+                            <div class="md:col-span-2 pt-4">
+                                <button type="submit" class="w-full py-5 rounded-2xl btn-primary text-white font-black text-lg shadow-2xl shadow-royal/40 hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+                                    Start My Project
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 py-24 relative z-10">
+            <div class="relative overflow-hidden rounded-[3rem] p-12 md:p-24 text-center bg-gradient-to-r from-royal to-electric">
+                <div class="absolute inset-0 bg-black/20"></div>
+                <div class="absolute inset-0 opacity-20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuACJraqkn2u68fMKeEEctuJGGT0Xt4wqS8TYaucfuK_DK2O0TlKVuk5tFSHxG2h3zCEfhpU2Unn6_0jVpHhNiBhjtDqoiUoma-NBG0Echfx3M-x0R55JwfzIt2nMQP_-qcCWrukFJZguoXTxkFXhTTulKLdKcJCqqCHYC32iykww620OZd18JBzkZAAzeoOUky2jaVnPEmEycP0fMbm-ucZkqvpB9Hkog3--FXR_ub48dF9-TLPkUeVqb6WygSUKv3cs_kfQyM21aCe')"></div>
+                <div class="relative z-10 max-w-2xl mx-auto">
+                    <h2 class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight">Your Digital Future Starts Here.</h2>
+                    <button class="bg-white text-royal px-10 py-5 rounded-full font-black text-lg shadow-2xl hover:bg-slate-50 hover:scale-105 transition-all">
+                        Start Your Project
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-20 pb-10 px-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="md:col-span-2">
+                    <div class="text-3xl font-black italic mb-6">GEN<span class="text-electric">ESIS</span></div>
+                    <p class="text-slate-500 max-w-sm">Designing the future, today. A premium digital studio for brands that dare to lead.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white">Navigation</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="./about.html" class="hover:text-electric">About</a></li>
+                        <li><a href="./services.html" class="hover:text-electric">Services</a></li>
+                        <li><a href="./portfolio.html" class="hover:text-electric">Work</a></li>
+                        <li><a href="./contact.html" class="hover:text-electric">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white">Social</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#" class="hover:text-royal">Instagram</a></li>
+                        <li><a href="#" class="hover:text-royal">Twitter/X</a></li>
+                        <li><a href="#" class="hover:text-royal">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-royal">Dribbble</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-600 text-xs uppercase tracking-widest">
+                <div>© 2024 GENESIS DIGITAL STUDIO. All Rights Reserved.</div>
+                <div class="flex gap-8">
+                    <a href="mailto:hello@genesis.studio" class="text-white font-bold hover:text-electric transition-colors">hello@genesis.studio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
